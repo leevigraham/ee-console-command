@@ -1,0 +1,33 @@
+{
+    "name": "leevigraham/ee-console-command",
+    "description": "Console Commands For ExpressionEngine",
+    "authors": [
+        {
+            "name": "Leevi Graham",
+            "email": "info@leevigraham.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "rsanchez/ExpressionEngine-Bootstrap",
+                "version": "master",
+                "source": {
+                    "url": "https://github.com/rsanchez/ExpressionEngine-Bootstrap.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "symfony/console": "2.5.*@dev",
+        "rsanchez/ExpressionEngine-Bootstrap": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "LgCommand\\": "third_party/lg_command"
+        }
+    }
+}
